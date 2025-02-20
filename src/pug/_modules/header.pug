@@ -1,0 +1,56 @@
+header.header.js-header
+  .container
+    .header-wrap
+      .header-main
+        .header-logo
+          a(href="#" target="_self")
+            +img("common/logo.svg")
+          h1.hide-sitename CTRLS VN
+        nav.header-nav
+          ul.menu-list
+            li.menu-item.current-menu-item.dropdown
+              a(href="/course.html") Khóa học
+              ul.child
+                li.menu-item
+                  +self("Canva Design School: Graphic Design Basics")
+                li.menu-item
+                  +self("CalArts Graphic Design Specialization")
+                li.menu-item
+                  +self("Adobe Illustrator for Beginners")
+            each menuData, index in [{title: "FAQs"}, {title: "Blog"}]
+              li.menu-item
+                a(href="#")= menuData.title
+      .header-action
+        .header-cart
+          .menu-item.js-icon-cart
+            span Giỏ hàng
+            span.header-cart_number 99
+          .menu-bar.js-bar
+            .menu-icon
+        if pageID !== "accountpage"
+          .header-sign
+            a.menu-item(href="/sign-in.html" target="_self") Đăng nhập
+            span.menu-item &#160;/&#160;
+            a.menu-item(href="/sign-up.html" target="_self") Đăng ký
+        if pageID === "accountpage"
+          .header-account.dropdown
+            +avatar
+            ul.child
+              li.menu-item.current-menu-item
+                +self("Khóa học")
+              li.menu-item
+                +self("Cài đặt")
+              li.menu-item
+                +self("Đăng xuất")
+        if pageID === "accountSetting"
+          .header-account.dropdown
+            +avatar
+            ul.child
+              li.menu-item
+                +self("Khóa học")
+              li.menu-item.current-menu-item
+                +self("Cài đặt")
+              li.menu-item
+                +self("Đăng xuất")
+
+include ./cart-sidebar

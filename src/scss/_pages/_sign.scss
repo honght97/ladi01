@@ -1,0 +1,89 @@
+.sign {
+  overflow: hidden;
+  padding-bottom: 8.5rem;
+  padding-top: 8rem;
+  @include max(1250.98px) {
+    padding-bottom: 2rem;
+  }
+
+  @include max(1100.98px) {
+    padding-bottom: 0;
+  }
+  @include max(991.98px) {
+    padding-bottom: 8rem;
+  }
+  @include max(575.98px) {
+    padding-bottom: 5rem;
+  }
+}
+
+.sign-form {
+  width: 40%;
+  @include autoX;
+  &_inner {
+    padding: 3.5rem;
+    border-radius: 1.4172rem;
+    border: 0.709px solid #000;
+    background: #fff;
+  }
+  &_heading {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    img {
+      margin-top: -0.2rem;
+      @include box(2rem);
+    }
+  }
+
+  @include max(1199.98px) {
+    width: calc(45% - 2rem);
+    &_inner {
+      padding: 2rem 1.5rem;
+    }
+  }
+  @include max(991.98px) {
+    width: 100%;
+  }
+}
+.sign-title {
+  color: $color-text;
+  @include fz-24;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.sign-desc {
+  color: #4c4c4d;
+  @include fz-15;
+}
+.has-account {
+  color: $color-text;
+  text-align: center;
+  @include fz-13;
+  &_link {
+    display: inline-flex;
+    align-items: center;
+
+    @include transition;
+    span {
+      text-decoration: underline;
+    }
+    img {
+      @include transition;
+    }
+    &:hover {
+      color: #90ab2a;
+      img {
+        transform: translateX(0.3rem);
+        filter: brightness(0) saturate(100%) invert(51%) sepia(65%)
+          saturate(1902%) hue-rotate(41deg) brightness(96%) contrast(101%);
+      }
+    }
+  }
+}

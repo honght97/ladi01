@@ -1,0 +1,39 @@
+extends _layout/default
+
+block vars
+  -title        = 'Sign Up'
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = 'signpage'
+  -path         = '.'
+
+block scripts
+
+block container
+  section.sign
+    .container
+      .sign-form
+        .sign-form_inner
+          .sign-form_heading
+            h2.sign-title Đăng ký
+            p.sign-desc Tạo tài khoản để bắt đầu mua các khóa học.
+          form(action="")
+            +Input("Họ tên", 'Nhập họ tên của bạn' )
+            +Input("Email", 'Nhập Email của bạn', 'email', 'input2')
+            +password
+            +checkbox("policyInput", 'Tôi đồng ý với Điều khoản sử dụng và Chính sách bảo mật')
+            .form-group
+              button.btn.btn--second Đăng ký
+            .form-group
+              button.btn.btn--border
+                +img("common/ico_google.svg")
+                span Đăng ký với Google
+            .has-account
+              span Đã có tài khoản?&#160;
+              +self("", "has-account_link")
+                span Đăng nhập
+                +img("common/ico_arrow.svg")
+
+

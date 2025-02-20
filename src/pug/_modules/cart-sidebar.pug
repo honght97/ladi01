@@ -1,0 +1,42 @@
+.cart-overlay.js-cart-overlay
+.cart-wrap.js-cart
+  .js-cart-close.cart-close
+    +img("common/ico_close.svg")
+  .order.cart
+    if pageID !== "cartpage"
+      .cart-empty
+        .empty-img
+          +img("common/empty_cart.png")
+        .empty-text
+          span Giỏ hàng trống, khám phá khóa học&#160;
+          +self("tại đây")
+    if pageID === "cartpage"
+      h3.payment-title Tổng cộng:
+      ul.label-list
+        li.label-box
+          +self("", "label-img")
+            +img("common/img_2.jpg")
+          .label
+            +self("Combo: Một Tỷ Gói Mè Một Tỷ Gói Mè Một Tỷ Gói Mè Một Tỷ Gói Mè", "label-left")
+            p.label-right 100.840.000đ
+        li.label-box
+          +self("", "label-img")
+            +img("common/img_2.jpg")
+          .label
+            +self("Design Fundamentals", "label-left")
+            p.label-right 100.840.000đ
+      .label.coupon
+        p.label-left Mã khuyến mãi:
+        p.label-right.btn--plus.js-add-coupon
+          +img("common/ico_plus.svg")
+      .label.coupon-input.js-coupon-input
+        input.form-input(type="text" placeholder="Nhập mã khuyến mãi")
+      .label.total
+        p.label-left Tổng cộng:
+        p.label-right 100.840.000đ
+      .card-tag
+        +radio('Thanh toán bằng', 'thẻ','payment1','payment',true)
+        +radio('Thanh toán bằng', 'momo','payment2', 'payment')
+      .form-group
+        button.btn.btn--gardient Thanh toán
+      +checkbox("policyInput1", 'Tôi đồng ý với Điều khoản và Chính sách')
