@@ -1,11 +1,14 @@
 :root {
-  --font-pri: "Roboto", serif;
+  --font-pri: "Montserrat", serif;
+  --font-sec: "Baskervville", serif;
+  --font-third: "Conqueror", serif;
+  --font-four: "Brushwell", serif;
   --size-hd: 10rem;
 }
 
-$color-pri: #1a2352;
-$color-second: #ec1d23;
-$color-text: #000000;
+$color-pri: #e3d3bb;
+$color-second: #7c2713;
+$color-text: #c68946;
 $header: 7.5rem;
 @mixin max($value) {
   @media screen and (max-width: $value) {

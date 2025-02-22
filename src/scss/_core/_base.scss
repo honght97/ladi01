@@ -5,10 +5,6 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-
-  @media screen and (min-width: 2000px) {
-    font-size: 100%;
-  }
 }
 
 body {
@@ -18,15 +14,16 @@ body {
   font-weight: 400;
   color: #000000;
   overflow: hidden auto;
+
   &::-webkit-scrollbar {
     width: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    background: rgba(#ee1e3d, 0.2);
+    background: rgba(#5e1813, 0.2);
     border-radius: 1rem;
   }
-  @media screen and (min-width: 2000px) {
-    font-size: 2rem;
+  @media screen and (width: 575.98px) {
+    font-size: 1.4rem;
   }
 }
 

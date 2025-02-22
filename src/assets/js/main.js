@@ -6,18 +6,20 @@ import TabModule from "./module/TabModule.js";
 import MenuModule from "./module/MenuModule.js";
 import FormMoudule from "./module/FormModule.js";
 import GroupContactModule from "./module/GroupContactModule.js";
+import HomeModule from "./module/HomeModule.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   // Animation
   AosModule();
   // Tab
-  TabModule();
+  // TabModule();
   // Select
   //Select2Module();
   // Component
   //SwiperModule();
   //GalleryModule();
   MenuModule();
-  FormMoudule();
-  GroupContactModule();
+  // FormMoudule();
+  // GroupContactModule();
+  HomeModule();
 });
