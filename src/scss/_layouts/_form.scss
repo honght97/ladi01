@@ -3,7 +3,7 @@
 }
 .form-label {
   color: $color-text;
-  @include fz-15;
+  @include fz-14;
   font-weight: 500;
   font-family: var(--font-pri);
   display: block;
@@ -11,21 +11,21 @@
 }
 .form-input {
   font-family: var(--font-pri);
-  border-radius: 1rem;
-  border: 1px solid #8fab2a36;
-  background: #fff;
+  border-radius: 0.8rem;
+  border: 1px solid $color-text;
+  background: transparent;
   width: 100%;
-  padding: 1.6rem;
-  @include fz-15;
-  color: $color-text;
+  padding: 1.2rem 1.6rem;
+  @include fz-14;
+  color: $color-second;
   @include transition;
   &:focus {
     outline: none;
-    border-color: #90ab2a;
+    border-color: $color-second;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   &::placeholder {
-    color: #ccc;
+    color: $color-text;
   }
 }
 .form-text {

@@ -1,6 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: "Brushwell";
   src: url("NVNBrushwellRegular.ttf");
   font-style: normal;
   font-display: swap;
+} */
+@font-face {
+  font-family: "Ring Town";
+  font-style: normal;
+  font-weight: normal;
+  src: url("ringtown-alt-1.ttf");
 }

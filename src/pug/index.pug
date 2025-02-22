@@ -12,35 +12,342 @@ block vars
 block scripts
 
 block container
-
   .slides-container
     #slide-1.slide
       .hero-wrap
         .hero-img
-          +img("home/hero3.jpg")
+          +img("home/hero2.jpg")
         .hero-inner
-          .hero-name
-            p Vinhomes Wonder City
-
+          .hero-content
+            .hero-name
+              p Vinhomes Wonder City
+            .hero-ani(data-aos="fade-up")
+              .hero-name1
+                p Khơi nguồn
+              .hero-name2
+                p thịnh vượng
+            .hero-if(data-aos="zoom-in" data-aos-delay="700")
+              .hero-it
+                p 3/3
+                p Kickoff ra quân dự án
+              .hero-it
+                p 8/3
+                p Chốt booking
+              .hero-it
+                p 9/3
+                p Mở bán phân khu Hừng Đông
+            .hero-sp(data-aos="zoom-in" data-aos-delay="1000")
+              .hero-sp_inner
+                a.btn(href="#")
+                  span TƯ VẤN CHO TÔI
+      .overview.pd-10
+        .container
+          .overview-wrap
+            .overview-l(data-aos="fade-right")
+              .hero-name
+                p Vinhomes Wonder City
+              .overview-tt
+                span.hero-name2 THÀNH PHỐ CỦA NHỮNG
+                br
+                span.hero-name2 TRẢI NGHIỆM&#160;
+                span.hero-name1 Thời thượng
+            .overview-r(data-aos="fade-left")
+              .mona-content
+                p
+                  strong Vinhomes Wonder Park
+                  | &#160;sẽ là đại đô thị tiếp theo của Tập đoàn Vingroup triển khai tại khu vực Đan Phượng cửa ngõ phía Tây Bắc của Thủ đô Hà Nội. Nối tiếp sau sự thành công của đại đô thị Vinhomes Smart City và Vinhomes Ocean Park, chủ đầu tư muốn chứng tỏ về sứ mệnh của mình là luôn không ngừng đổi mới, luôn sáng tạo để mang đến những sản phẩm với chất lượng và dịch vụ tuyệt vời dành cho người Việt.
+          .overview-main(data-aos="fade-up" data-aos-delay="1000")
+            h2.tt THÔNG TIN DỰ ÁN
+            ul.overview-list
+              li
+                .overview-txt
+                  strong Tên dự án:
+                .overview-content
+                  span  Vinhomes Wonder City - Thành Phố Diệu Kỳ
+              li
+                .overview-txt
+                  strong Chủ đầu tư:&#160;
+                span Tập đoàn Vingroup
+              li
+                .overview-txt
+                  strong Vị trí:&#160;
+                .overview-content
+                  span Xã Tân Hội & Liên Trung, huyện Đan Phượng, Hà Nội
+              li
+                .overview-txt
+                  strong Quy mô:&#160;
+                .overview-content
+                  span 133 ha
+              li
+                .overview-txt
+                  strong Mật độ xây dựng:&#160;
+                .overview-content
+                  span 25%
+              li
+                .overview-txt
+                  strong Tổng số căn thấp tầng:&#160;
+                .overview-content
+                  span 2.356 căn Biệt thự đơn lập, Biệt thự song lập và Liền kề. Hỗn hợp Văn phòng, Căn hộ, Thương mại - Dịch vụ
     #slide-2.slide
-      .centered
-        h1 It is so easy to navigate through slides
-        p
-          | You can go back to
-          span.go-prev previous slide
-          |  or go to the
-          span.go-next next slide
-          | .
+      .position.pd-10
+        .position-wrap
+          .position-l(data-aos="fade-right")
+            +img("home/position.png")
+          .position-r(data-aos="fade-left")
+            .hero-name
+              p Vinhomes Wonder City
+            .position-header
+              +img("home/location.png")
+              .position-tt
+                h2.tt VỊ TRÍ TÂM ĐIỂM KẾT NỐI&#160;
+                  br
+                  | ĐÓN ĐẦU PHỒN VINH
+            .position-content
+              .mona-content
+                p
+                  strong Vinhomes Đan Phượng
+                  | &#160;– đại đô thị sinh thái đồng bộ và đẳng cấp bậc nhất khu vực hiện đang là chủ đề nóng làm tốn không ít giấy mực của báo chí, cũng là tâm điểm chú ý của các nhà đầu tư trong thời gian qua. Tuy hiện tại dự án chưa có thông tin chính thức cũng như giá bán cụ thể, nhưng rất nhiều khách hàng đã xuống tiền đặt cọc thiện chí từ rất sớm.
+                p Bởi&#160;
+                  strong vị trí Vinhomes Đan Phượng
+                  | &#160;vô cùng đắc địa và có thể đánh giá là một mỏ vàng cho các nhà đầu tư. Với mong muốn giúp khách hàng nắm bắt sớm các thông tin, hiểu rõ về tiềm năng của dự án để không bỏ lỡ cơ hội “vàng”. Qua bài viết này, chúng tôi sẽ phân tích thật chi tiết về yếu tố “vị trí” – yếu tố hàng đầu quyết định đến sự thành bại của một dự án.
+        .container
+          .tl-wrap.js-tl(data-aos="fade-up" data-aos-delay="500")
+            .swiper
+              .swiper-wrapper
+                .swiper-slide
+                  .tl-item
+                    .tl-logo
+                      +img("home/logo1.png")
+                .swiper-slide
+                  .tl-item
+                    .tl-card
+                      .tl-head
+                        p.tl-tt 5
+                        p phút
+                      .tl-content
+                        p Hồ Hoàn Kiếm.
+                .swiper-slide
+                  .tl-item
+                    .tl-card
+                      .tl-head
+                        p.tl-tt 15
+                        p phút
+                      .tl-content
+                        p Hồ Tây.
+                .swiper-slide
+                  .tl-item
+                    .tl-card
+                      .tl-head
+                        p.tl-tt 20
+                        p phút
+                      .tl-content
+                        p Sân bay Nội Bài.
+                .swiper-slide
+                  .tl-item
+                    .tl-card
+                      .tl-head
+                        p.tl-tt 20
+                        p phút
+                      .tl-content
+                        p Vinhomes Riverside.
+            .swiper-pag
+              .swiper-pagination
+
     #slide-3.slide
-      .centered
-        h1 Use mouse wheel
-        p
-          | No, really. Try to scroll up and down with the mouse wheel to switch between slides.
+      .forte.pd-10
+        .container
+          .tt-wrap(data-aos="fade-up")
+            .hero-name1
+              p Vì Sao
+            p.tt Vinhomes Wonder City
+              br
+              | LỰA CHỌN Vượt Trội?
+          .forte-wrap.js-forte
+            .swiper
+              .swiper-wrapper
+                .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                  .forte-it
+                    .forte-img
+                      +img("home/forte1.jpg")
+                    .forte-inner
+                      p.forte-num 1
+                      p.tt CHỦ ĐẦU TƯ UY TÍN HÀNG ĐẦU VIỆT NAM
+                      .forte-content
+                        p Vingroup là chủ đầu tư uy tín nhất Việt Nam trong lĩnh vực BĐS.
+                .swiper-slide(data-aos="fade-up" data-aos-delay="400")
+                  .forte-it
+                    .forte-img
+                      +img("home/forte2.jpg")
+                    .forte-inner
+                      p.forte-num 2
+                      p.tt VỊ TRÍ ĐẮC ĐỊA – CỬA NGÕ TÂY BẮC THỦ ĐÔ
+                      .forte-content
+                        p Vị trí dự án nổi bật khi nằm trong vùng có tốc độ phát triển nhanh chóng
+                .swiper-slide(data-aos="fade-up" data-aos-delay="600")
+                  .forte-it
+                    .forte-img
+                      +img("home/forte3.jpg")
+                    .forte-inner
+                      p.forte-num 3
+                      p.tt QUY HOẠCH LÊN QUẬN ĐAN PHƯỢNG 2025
+                      .forte-content
+                        p Được UBND TP Hà Nội phê duyệt đề xuất lên quận vào năm 2025
+                .swiper-slide(data-aos="fade-up" data-aos-delay="800")
+                  .forte-it
+                    .forte-img
+                      +img("home/forte4.jpg")
+                    .forte-inner
+                      p.forte-num 4
+                      p.tt TIẾP GIÁP ĐẠI LỘ TÂY THĂNG LONG ĐẸP NHẤT HÀ NỘI
+                      .forte-content
+                        p Đại lộ Tây Thăng Long là tuyến đường huyết mạch dài 33km,
+                .swiper-slide(data-aos="fade-up" data-aos-delay="1000")
+                  .forte-it
+                    .forte-img
+                      +img("home/hero3.jpg")
+                    .forte-inner
+                      p.forte-num 5
+                      p.tt NGUỒN CUNG CẤP ĐẤT KHAN HIẾM
+                      .forte-content
+                        p Sự khan hiếm này đã thúc đẩy sự phát triển của các dự án mới, trong đó có Vin Đan Phượng.
+            .swiper-pag
+              .swiper-pagination
+          .forte-btn(data-aos="fade-up")
+            .hero-sp_inner
+              a.btn(href="#")
+                span TƯ VẤN CHO TÔI
     #slide-4.slide
-      .centered
-        h1 ... Or use keyboard arrows
-        p You go to previous and next slide, using up and down keyboard arrows.
+      .exten.pd-10
+        .exten-outer
+          .exten-wrap
+            .exten-l(data-aos="fade-right")
+              .exten-gallery
+                .swiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      +img("home/exten6.jpg")
+                    .swiper-slide
+                      +img("home/exten1.jpg")
+                    .swiper-slide
+                      +img("home/exten2.jpg")
+                    .swiper-slide
+                      +img("home/exten3.jpg")
+                    .swiper-slide
+                      +img("home/exten4.jpg")
+                    .swiper-slide
+                      +img("home/exten5.jpg")
+            .exten-r(data-aos="fade-left")
+              .tt-wrap
+                h2.tt SỐNG THỜI THƯỢNG
+                  br
+                  | TRẢI NGHIỆM NGÀN TIỆN ÍCH
+              .exten-content
+                .mona-content
+                  p Tại Vinhomes Wonder City, mỗi ngày là một hành trình tận hưởng với những trải nghiệm thú vị, nơi mọi tiện ích được kiến tạo nâng tầm phong cách sống.
+              .swiper-nav
+                .prev
+                .next
+              .exten-thumb
+                .swiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      +img("home/exten6.jpg")
+                    .swiper-slide
+                      +img("home/exten1.jpg")
+                    .swiper-slide
+                      +img("home/exten2.jpg")
+                    .swiper-slide
+                      +img("home/exten3.jpg")
+                    .swiper-slide
+                      +img("home/exten4.jpg")
+                    .swiper-slide
+                      +img("home/exten5.jpg")
     #slide-5.slide
+      .provider.pd-10
+        .container(data-aos="fade-up")
+          .tt-wrap
+            h2.tt Mặt Bằng Vinhomes Đan Phượng
+              br
+              | Phân Khu Dự Án
+            p.desc
+              strong Mặt bằng Vinhomes Đan Phượng
+              | &#160;được quy hoạch thành 2 phân khu Hừng Đông (Wonder Avenue) và phân khu Bình Minh (Wonder Bay) với nhiều loại hình sản phẩm từ biệt thự đơn lập, biệt thự song lập, liền kề, shophouse và chung cư. Mỗi phân khu đều mang trong mình những đặc điểm nổi bật riêng. Mang đến cho khách hàng nhiều sự lựa chọn, phù hợp với nhu cầu của nhiều nhà đầu tư. Đây được xem là một trong những dự án trọng điểm tại khu vực Tây Bắc Hà Nội, được kỳ vọng trở thành khi đô thị sinh thái hiện đại với quy hoạch đồng bộ và đẳng cấp.
+        .provider-img(data-aos="fade-up")
+          +img("home/ground.webp")
+        .container
+          .provider-wrap
+            .provider-it(data-aos="fade-up" data-aos-delay="200")
+              .provider-card
+                p.tt Phân Khu Hừng Đông Wonder Avenue
+                p Phân khu Hừng Đông sẽ là phân khu được mở bán đầu tiên khi cơ sở hạ tầng giao thông đã được hoàn thiện. Vị trí đắc địa nằm ngay cạnh Vincom cùng tiềm năng phát triển mạnh mẽ, phân khu Hừng Đông Wonder Avenue là cơ hội đầu tư hấp dẫn cho các nhà đầu tư.
+                .provider-f
+                  +img("home/provider1.webp")
+                .provider-if
+                  .mona-content
+                    p 1.521 căn thấp tầng
+                    ul
+                      li 9 biệt thự đơn lập
+                      li 25 căn biệt thự song lập
+                      li 373 căn shophouse
+                      li 1.114 căn liền kề
+            .provider-it(data-aos="fade-up" data-aos-delay="400")
+              .provider-card
+                p.tt Phân Khu Bình Minh Wonder Bay
+                p Là phân khu cao cấp nhất tại dự án, với các loại hình sản phẩm chủ yếu là biệt thự đơn lập, biệt thự song lập, nhà liền kề. Phân khu Bình Minh Wonder Bay đang trở thành điểm đến của giới tinh hoa với những sản phẩm đắt đỏ.
+                .provider-f
+                  +img("home/provider2.webp")
+                .provider-if
+                  .mona-content
+                    p 835 căn thấp tầng
+                    ul
+                      li Đơn lập: 14 căn
+                      li Song lập: 237 căn
+                      li Liền kề: 516 căn
+                      li Shophouse: 68 căn
+          .products
+            .tt-wrap(data-aos="fade-up")
+              h2.tt CÁC DÒNG SẢN PHẨM
+            .products-wrap
+              .swiper
+                .swiper-wrapper
+                  .swiper-slide(data-aos="fade-up" data-aos-delay="200")
+                    .provider-card
+                      .provider-f
+                        +img("home/forte3.jpg")
+                      p.tt Liền Kề
+                      p Biệt thự liền kề Vinhomes Đan Phượng là loại hình sản phẩm có số lượng nhiều nhất dự án, nằm trải dài ở tất cả các phân khu.
+                      .provider-if
+                        .mona-content
+                          ul
+                            li Số lượng: 1.630
+                            li Diện tích: 88 – 211 m2
+                            li Chiều cao: 4 tầng
+                  .swiper-slide(data-aos="fade-up" data-aos-delay="400")
+                    .provider-card
+                      .provider-f
+                        +img("home/forte3.jpg")
+                      p.tt Song Lập
+                      p Song lập Vinhomes Đan Phượng là sản phẩm cao cấp kết hợp nhiều tính năng sử dụng. Vừa để ở vừa để khai thác kinh doanh.
+                      .provider-if
+                        .mona-content
+                          ul
+                            li Số lượng: 1.630
+                            li Diện tích: 88 – 211 m2
+                            li Chiều cao: 4 tầng
+                  .swiper-slide(data-aos="fade-up" data-aos-delay="600")
+                    .provider-card
+                      .provider-f
+                        +img("home/forte3.jpg")
+                      p.tt Đơn Lập
+                      p Biệt thự đơn lập Vinhomes Đan Phượng là loại hình sản phầm cao cấp nhất tại dự án. Đem đến trải nghiệm sống đẳng cấp dành cho gia chủ.
+                      .provider-if
+                        .mona-content
+                          ul
+                            li Số lượng: 1.630
+                            li Diện tích: 88 – 211 m2
+                            li Chiều cao: 4 tầng
+              .swiper-pag
+                .swiper-pagination
     #slide-6.slide
     #slide-7.slide
     #slide-8.slide

@@ -2,17 +2,17 @@
   @include fz-18;
   display: inline-block;
   text-align: center;
-  padding: 1.2rem 1.4rem;
-  border-radius: 1rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 4rem;
   position: relative;
   transition: 0.3s ease all;
   z-index: 1;
   overflow: hidden;
   font-family: var(--font-pri);
   @include fz-15;
-  font-weight: 500;
-  background: $color-pri;
-  color: #fff;
+  font-weight: 600;
+  background: $color-second;
+  color: $color-pri;
   &::before {
     transition: 0.5s all ease;
     position: absolute;
@@ -22,7 +22,7 @@
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: $color-second;
+    background-color: $color-text;
     z-index: -1;
   }
 

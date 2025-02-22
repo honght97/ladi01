@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Select
   //Select2Module();
   // Component
-  //SwiperModule();
+  SwiperModule();
   //GalleryModule();
   MenuModule();
   // FormMoudule();

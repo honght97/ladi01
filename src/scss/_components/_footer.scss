@@ -1,10 +1,8 @@
 .footer {
   background: $color-pri;
   overflow: hidden;
-  padding: 6.2rem 0;
-  @include max(575.98px) {
-    padding-block: 4rem;
-  }
+  padding-top: 4rem;
+  padding-bottom: 12rem;
 }
 .footer-main {
   display: flex;
@@ -63,6 +61,7 @@
 }
 .footer-if_item {
   display: flex;
+  align-items: center;
   gap: 0.4rem;
   & > img {
     width: 1.6rem;
@@ -72,5 +71,47 @@
   @include transition;
   &:hover {
     color: $color-second;
+  }
+}
+.form-fx {
+  z-index: 100;
+  padding: 1.5rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(
+    -90deg,
+    rgba(227, 211, 187, 1) 75%,
+    rgba(198, 137, 70, 1) 100%
+  );
+}
+.form-fx_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.4rem;
+}
+.form-fx_l {
+  width: 30%;
+  .footer-tt {
+    @include fz-16;
+    text-transform: uppercase;
+  }
+  .footer-if {
+    margin-top: 0.8rem;
+  }
+}
+.form-fx_r {
+  flex: 1;
+  .form-inner {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  .form-label {
+    margin-bottom: 0;
+    width: calc(100% / 2 - 10rem);
   }
 }

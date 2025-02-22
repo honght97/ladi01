@@ -1,8 +1,8 @@
 @import "../_modules/mixin";
 .mona-content {
-  color: #757575;
-  @include fz-18;
-  line-height: 1.6;
+  color: $color-text;
+  @include fz-16;
+  line-height: 1.5;
   > .container {
     padding: 0;
   }
