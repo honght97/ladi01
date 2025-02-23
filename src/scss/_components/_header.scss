@@ -41,7 +41,7 @@
   padding: 1.2rem 2.4rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(#e3d3bb, 0.7);
+  background: rgba(#e3d3bb, 0.8);
   display: flex;
   gap: 1.6rem 6rem;
   justify-content: space-between;
@@ -91,7 +91,7 @@
 .menu-link {
   font-family: var(--font-third);
   @include fz-18;
-  color: $color-text;
+  color: $color-text1;
   display: inline-block;
   padding: 0 2.4rem;
   @include transition;

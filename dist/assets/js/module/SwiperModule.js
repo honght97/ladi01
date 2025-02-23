@@ -9,16 +9,16 @@ export default function SwiperModule() {
       },
     });
   }
-  if ($(".js-tl .swiper").length) {
-    var swiperFooter = new Swiper(".js-tl .swiper", {
-      slidesPerView: "auto",
-      speed: 800,
-      pagination: {
-        el: ".js-tl .swiper-pagination",
-        clickable: true,
-      },
-    });
-  }
+  // if ($(".js-tl .swiper").length) {
+  //   var swiperFooter = new Swiper(".js-tl .swiper", {
+  //     slidesPerView: "auto",
+  //     speed: 800,
+  //     pagination: {
+  //       el: ".js-tl .swiper-pagination",
+  //       clickable: true,
+  //     },
+  //   });
+  // }
   if ($(".exten-thumb .swiper").length && $(".exten-gallery .swiper").length) {
     var swiper = new Swiper(".exten-thumb .swiper", {
       loop: true,

@@ -5,6 +5,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow: hidden auto;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.3;
   font-weight: 400;
-  color: $color-text;
+  color: $color-text1;
   overflow: hidden auto;
   background: radial-gradient(
     circle,

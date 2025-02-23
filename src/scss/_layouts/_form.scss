@@ -12,20 +12,20 @@
 .form-input {
   font-family: var(--font-pri);
   border-radius: 0.8rem;
-  border: 1px solid $color-text;
+  border: 1px solid $color-text1;
   background: transparent;
   width: 100%;
   padding: 1.2rem 1.6rem;
   @include fz-14;
-  color: $color-second;
   @include transition;
+  color: $color-text1;
   &:focus {
     outline: none;
     border-color: $color-second;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   &::placeholder {
-    color: $color-text;
+    color: $color-text1;
   }
 }
 .form-text {

@@ -20,9 +20,9 @@
     // background: rgba(#000, 0.25);
     background: radial-gradient(
       circle,
-      rgba(227, 211, 187, 0.4009978991596639) 0%,
-      rgba(198, 137, 70, 0.15449929971988796) 50%,
-      rgba(124, 39, 19, 0.3617822128851541) 100%
+      rgba(252, 248, 242, 0.55) 0%,
+      rgba(198, 137, 70, 0.1) 50%,
+      rgba(124, 39, 19, 0.4) 100%
     );
   }
   @include max(1199.98px) {
@@ -179,8 +179,9 @@
   font-family: var(--font-six);
   // color: $color-pri;
   color: $color-second;
-  letter-spacing: 2rem;
+  // letter-spacing: 2rem;
   // margin-top: 1.6rem;
+  letter-spacing: 0.6rem;
   @include max(1500.98px) {
     font-size: 6rem;
   }
@@ -193,6 +194,7 @@
   font-size: 10rem;
   font-weight: 500;
   // color: $color-pri;
+  // color: $color-second;
   color: $color-second;
   text-transform: uppercase;
   // letter-spacing: 1rem;
@@ -315,7 +317,7 @@
 }
 .overview-r {
   .mona-content {
-    color: $color-text;
+    color: $color-text1;
     strong {
       color: $color-second;
       font-weight: 400;
@@ -338,6 +340,7 @@
   width: 75%;
   margin-right: auto;
   margin-left: auto;
+  color: $color-text1;
   li {
     margin-top: 1.2rem;
     display: flex;
@@ -423,7 +426,7 @@
 .position-content {
   margin-top: 3.2rem;
   .mona-content {
-    color: $color-text;
+    color: $color-text1;
   }
 }
 .tl-logo {
@@ -445,6 +448,9 @@
       width: 6rem;
     }
   }
+  @include max(575.98px) {
+    margin-left: 2.5rem;
+  }
 }
 .tl-wrap {
   // display: flex;
@@ -457,7 +463,7 @@
   // }
   .swiper-slide {
     width: 20%;
-    min-width: 16rem;
+    // min-width: 16rem;
     position: relative;
     &::before {
       position: absolute;
@@ -485,6 +491,33 @@
       }
     }
   }
+  .swiper-wrapper {
+    @include max(575.98px) {
+      flex-direction: column;
+    }
+  }
+  @include max(575.98px) {
+    .swiper-slide {
+      width: 100%;
+      padding: 1.6rem 0;
+      &::before {
+        height: 100%;
+        width: 1px;
+        left: 6rem;
+      }
+      &:first-child {
+        &::before {
+          height: 50%;
+          top: 100%;
+        }
+      }
+      &:not(:first-child) {
+        &::after {
+          left: 6rem;
+        }
+      }
+    }
+  }
 }
 .tl-item {
   height: 100%;
@@ -494,9 +527,18 @@
   flex-direction: column;
   // row-gap: 3.2rem;
   text-align: center;
+  @include max(575.98px) {
+    flex-direction: row;
+    column-gap: 3.2rem;
+    align-items: center;
+  }
 }
 .tl-head {
   margin-bottom: 3rem;
+  @include max(575.98px) {
+    margin-bottom: 0;
+    min-width: 5rem;
+  }
 }
 .tl-tt {
   font-weight: 600;
@@ -521,10 +563,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  row-gap: 1.6rem;
+  row-gap: 0.8rem;
   .hero-name1 {
-    font-size: 4rem;
-    letter-spacing: 0.8rem;
+    // font-size: 4rem;
+    @include fz-40;
+    // letter-spacing: 0.8rem;
   }
   .tt {
     text-transform: uppercase;
@@ -703,7 +746,7 @@
   }
 }
 .desc {
-  color: $color-text;
+  color: $color-text1;
   strong {
     font-weight: 700;
   }
@@ -760,6 +803,7 @@
 }
 .provider-if {
   .mona-content {
+    color: $color-text;
     ul {
       padding-left: 3.2rem;
       margin-top: 1.6rem;
@@ -778,6 +822,12 @@
   .provider-f {
     margin-bottom: 1.6rem;
     margin-top: 0;
+    color: $color-text1;
+  }
+  .provider-if {
+    .mona-content {
+      color: $color-text1;
+    }
   }
   .swiper-slide {
     width: calc(100% / 3);
@@ -787,6 +837,10 @@
   .provider-card {
     background: transparent;
     border: 1px solid $color-text;
+    color: $color-text1;
+    .tt {
+      color: $color-text1;
+    }
   }
 }
 .progress {
@@ -861,6 +915,14 @@
       color: $color-pri;
     }
   }
+  .desc {
+    color: $color-pri;
+  }
+  .promotion-content {
+    .mona-content {
+      color: $color-pri;
+    }
+  }
 }
 .promotion-wrap {
   display: flex;
@@ -873,6 +935,21 @@
   );
   row-gap: 3.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .promotion-fr {
+    .desc {
+      color: $color-text1;
+    }
+    .form-input {
+      border-color: $color-text1;
+      color: $color-text1;
+      &:focus {
+        border-color: $color-second;
+      }
+      &::placeholder {
+        color: $color-text1;
+      }
+    }
+  }
 }
 .promotion-l,
 .promotion-r {
@@ -895,6 +972,9 @@
     margin-right: auto;
     margin-left: auto;
     width: fit-content;
+  }
+  .desc {
+    color: $color-text;
   }
 }
 .other-wrap {

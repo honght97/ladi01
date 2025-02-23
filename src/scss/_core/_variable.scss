@@ -1,15 +1,19 @@
 :root {
   --font-pri: "Montserrat", serif;
+  // --font-pri: "NewYork", serif;
   // --font-sec: "Baskervville", serif;
   // --font-third: "Conqueror", serif;
   // --font-four: "Brushwell", serif;
-  --font-six: "Cherish", serif;
+  // --font-six: "Cherish", serif;
+  --font-six: "NewYork", serif;
   --size-hd: 10rem;
 }
 
 $color-pri: #e3d3bb;
-$color-second: #7c2713;
-$color-text: #c68946;
+$color-second: #b90c0c;
+// $color-text: #c68946;
+$color-text: #f1cca4;
+$color-text1: #ff9624;
 $header: 7.5rem;
 @mixin max($value) {
   @media screen and (max-width: $value) {
