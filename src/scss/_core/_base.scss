@@ -15,12 +15,12 @@ body {
   font-weight: 400;
   color: $color-text1;
   overflow: hidden auto;
-  background: radial-gradient(
-    circle,
-    rgba(227, 211, 187, 0.4009978991596639) 0%,
-    rgba(198, 137, 70, 0.15449929971988796) 50%,
-    rgba(124, 39, 19, 0.3617822128851541) 100%
-  );
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(227, 211, 187, 0.4009978991596639) 0%,
+  //   rgba(198, 137, 70, 0.15449929971988796) 50%,
+  //   rgba(124, 39, 19, 0.3617822128851541) 100%
+  // );
   &::-webkit-scrollbar {
     width: 8px;
   }

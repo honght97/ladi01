@@ -10,21 +10,21 @@
     width: 100%;
     object-fit: cover;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    // background: rgba(#000, 0.25);
-    background: radial-gradient(
-      circle,
-      rgba(252, 248, 242, 0.55) 0%,
-      rgba(198, 137, 70, 0.1) 50%,
-      rgba(124, 39, 19, 0.4) 100%
-    );
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   // background: rgba(#000, 0.25);
+  //   background: radial-gradient(
+  //     circle,
+  //     rgba(252, 248, 242, 0.55) 0%,
+  //     rgba(198, 137, 70, 0.1) 50%,
+  //     rgba(124, 39, 19, 0.4) 100%
+  //   );
+  // }
   @include max(1199.98px) {
     min-height: 100dvh;
     height: 100%;
@@ -49,6 +49,34 @@
   }
   @include max(767.98px) {
     padding-top: calc(9rem + 1.5rem);
+  }
+  .hero-name {
+    padding: 1.2rem;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+    &::before {
+      top: -0.8rem;
+      background: linear-gradient(
+        90deg,
+        rgba(227, 211, 187, 1) 35%,
+        rgba(198, 137, 70, 1) 100%
+      );
+    }
+    &::after {
+      bottom: 0;
+      background: linear-gradient(
+        -90deg,
+        rgba(227, 211, 187, 1) 35%,
+        rgba(198, 137, 70, 1) 100%
+      );
+    }
   }
 }
 .hero-content {
@@ -144,33 +172,8 @@
   text-transform: uppercase;
   text-align: center;
   width: fit-content;
-  padding: 1.2rem;
+
   position: relative;
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-  &::before {
-    top: -0.8rem;
-    background: linear-gradient(
-      90deg,
-      rgba(227, 211, 187, 1) 35%,
-      rgba(198, 137, 70, 1) 100%
-    );
-  }
-  &::after {
-    bottom: 0;
-    background: linear-gradient(
-      -90deg,
-      rgba(227, 211, 187, 1) 35%,
-      rgba(198, 137, 70, 1) 100%
-    );
-  }
 }
 .hero-name1 {
   font-size: 8rem;
@@ -222,38 +225,38 @@
     position: relative;
     z-index: 1;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    // bottom: -10rem;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    // @include bgImage(bottom center);
-    // background-image: url("../images/home/decore2.png");
-    // background-image: url("../images/home/decore3.jpg");
-    // transform: rotate(-180deg);
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(227, 211, 187, 0.4009978991596639) 0%,
-    //   rgba(198, 137, 70, 0.35898109243697474) 50%,
-    //   rgba(124, 39, 19, 0.48503151260504207) 100%
-    // );
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(227, 211, 187, 0.4009978991596639) 0%,
-    //   rgba(198, 137, 70, 0.35898109243697474) 50%,
-    //   rgba(124, 39, 19, 0.6250875350140056) 100%
-    // );
-    background: radial-gradient(
-      circle,
-      rgba(227, 211, 187, 0.4009978991596639) 0%,
-      rgba(198, 137, 70, 0.15449929971988796) 50%,
-      rgba(124, 39, 19, 0.3617822128851541) 100%
-    );
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   // bottom: -10rem;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 0;
+  //   // @include bgImage(bottom center);
+  //   // background-image: url("../images/home/decore2.png");
+  //   // background-image: url("../images/home/decore3.jpg");
+  //   // transform: rotate(-180deg);
+  //   // background: radial-gradient(
+  //   //   circle,
+  //   //   rgba(227, 211, 187, 0.4009978991596639) 0%,
+  //   //   rgba(198, 137, 70, 0.35898109243697474) 50%,
+  //   //   rgba(124, 39, 19, 0.48503151260504207) 100%
+  //   // );
+  //   // background: radial-gradient(
+  //   //   circle,
+  //   //   rgba(227, 211, 187, 0.4009978991596639) 0%,
+  //   //   rgba(198, 137, 70, 0.35898109243697474) 50%,
+  //   //   rgba(124, 39, 19, 0.6250875350140056) 100%
+  //   // );
+  //   background: radial-gradient(
+  //     circle,
+  //     rgba(227, 211, 187, 0.4009978991596639) 0%,
+  //     rgba(198, 137, 70, 0.15449929971988796) 50%,
+  //     rgba(124, 39, 19, 0.3617822128851541) 100%
+  //   );
+  // }
 }
 .overview-main {
   @include bgImage(top center);
@@ -391,6 +394,9 @@
   @include max(1199.98px) {
     column-gap: 1.6rem;
     row-gap: 3.2rem;
+  }
+  @include max(991.98px) {
+    flex-direction: column-reverse;
   }
 }
 .position-l {
