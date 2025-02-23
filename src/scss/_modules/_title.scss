@@ -80,7 +80,7 @@
   // height: 75%;
   min-height: 30rem;
   // height: calc(100vw * (600 / 1728));
-
+  // max-height: 80dvh;
   @include max(1024px) {
     width: 100%;
     height: auto;
@@ -101,9 +101,12 @@
     // position: absolute;
     // top: 0;
     // left: 0;
+    // height: 100%;
+    // width: 100%;
+    width: auto;
     height: 100%;
-    width: 100%;
     object-fit: cover;
+    max-height: 80dvh;
   }
 }
 .modal-content {

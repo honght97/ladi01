@@ -80,12 +80,13 @@
   bottom: 0;
   width: 100%;
   left: 0;
-  background: linear-gradient(
-    -90deg,
-    rgba(227, 211, 187, 1) 75%,
-    rgba(198, 137, 70, 1) 100%
-  );
-
+  // background: linear-gradient(
+  //   -90deg,
+  //   rgba(227, 211, 187, 1) 75%,
+  //   rgba(198, 137, 70, 1) 100%
+  // );
+  background: linear-gradient(-90deg, #fffcf7 75%, #dfa7698a 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   @include max(991.98px) {
     background: transparent;
   }
