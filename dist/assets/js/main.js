@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   //Select2Module();
   // Component
   SwiperModule();
-  //GalleryModule();
+  GalleryModule();
   MenuModule();
   // FormMoudule();
   // GroupContactModule();

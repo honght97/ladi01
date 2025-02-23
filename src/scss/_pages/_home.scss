@@ -521,6 +521,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  row-gap: 1.6rem;
   .hero-name1 {
     font-size: 4rem;
     letter-spacing: 0.8rem;
@@ -750,6 +751,9 @@
 }
 .provider-f {
   margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .provider-if {
   margin-top: 1.6rem;
@@ -783,5 +787,48 @@
   .provider-card {
     background: transparent;
     border: 1px solid $color-text;
+  }
+}
+.progress {
+  overflow: hidden;
+}
+.progress-wrap {
+  position: relative;
+  padding-bottom: 4rem;
+  margin-right: -1.2rem;
+  margin-left: -1.2rem;
+  margin-top: 3.2rem;
+  @include max(575.98px) {
+    margin-right: -0.6rem;
+    margin-left: -0.6rem;
+  }
+  .swiper-slide {
+    width: calc(100% / 3);
+    padding: 0 1.2rem;
+    min-width: 30rem;
+    @include max(575.98px) {
+      padding: 0 0.6rem;
+    }
+  }
+  .swiper-grid-column > .swiper-wrapper {
+    flex-direction: row;
+    row-gap: 2.4rem;
+  }
+}
+.progress-it {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  aspect-ratio: 37.4/25.8;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.promotion {
+  overflow: hidden;
+  .hero-name1 {
+    font-size: 2rem;
   }
 }

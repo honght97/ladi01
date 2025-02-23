@@ -54,4 +54,17 @@ export default function SwiperModule() {
       },
     });
   }
+  if ($(".progress-wrap .swiper").length) {
+    var swiperFooter = new Swiper(".progress-wrap .swiper", {
+      slidesPerView: "auto",
+      speed: 800,
+      grid: {
+        rows: 2,
+      },
+      pagination: {
+        el: ".progress-wrap .swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
 }

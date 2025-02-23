@@ -85,6 +85,9 @@
     rgba(227, 211, 187, 1) 75%,
     rgba(198, 137, 70, 1) 100%
   );
+  @include max(991.98px) {
+    display: none;
+  }
 }
 .form-fx_wrap {
   display: flex;

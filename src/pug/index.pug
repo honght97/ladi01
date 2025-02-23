@@ -152,7 +152,8 @@ block container
                         p Vinhomes Riverside.
             .swiper-pag
               .swiper-pagination
-
+        .position-f(data-aos="fade-up")
+          +img('home/hero.jpg')
     #slide-3.slide
       .forte.pd-10
         .container
@@ -273,7 +274,7 @@ block container
               strong Mặt bằng Vinhomes Đan Phượng
               | &#160;được quy hoạch thành 2 phân khu Hừng Đông (Wonder Avenue) và phân khu Bình Minh (Wonder Bay) với nhiều loại hình sản phẩm từ biệt thự đơn lập, biệt thự song lập, liền kề, shophouse và chung cư. Mỗi phân khu đều mang trong mình những đặc điểm nổi bật riêng. Mang đến cho khách hàng nhiều sự lựa chọn, phù hợp với nhu cầu của nhiều nhà đầu tư. Đây được xem là một trong những dự án trọng điểm tại khu vực Tây Bắc Hà Nội, được kỳ vọng trở thành khi đô thị sinh thái hiện đại với quy hoạch đồng bộ và đẳng cấp.
         .provider-img(data-aos="fade-up")
-          +img("home/ground.webp")
+          +img("home/ground.jpg")
         .container
           .provider-wrap
             .provider-it(data-aos="fade-up" data-aos-delay="200")
@@ -349,5 +350,29 @@ block container
               .swiper-pag
                 .swiper-pagination
     #slide-6.slide
+      .progress.pd-6
+        .container(data-aos="fade-up")
+          .tt-wrap
+            h2.tt HÌNH ẢNH VÀ TIẾN ĐỘ DỰ ÁN
+              br
+              | Vinhomes Wonder City
+            p.desc Khám phá tiến độ xây dựng thực tế của Vinhomes Wonder City qua những hình ảnh mới nhất. Dự án đang được triển khai nhanh chóng, đảm bảo chất lượng và các tiện ích sắp hoàn thiện.
+          .progress-wrap.gallery
+            .swiper
+              .swiper-wrapper
+                - var n = 0;
+                while n < 6
+                  .swiper-slide
+                    .progress-it.gItem(data-src=`../assets/images/home/progress${n+1}.jpg`)
+                      +img(`home/progress${n+1}.jpg`)
+                  - n++
+            .swiper-pag
+              .swiper-pagination
     #slide-7.slide
-    #slide-8.slide
+      .promotion.pd-10
+        .container(data-aos="fade-up")
+          .tt-wrap
+            h2.tt Ưu đãi Đặc biệt&#160;
+              br
+              | khi sở hữu Vinhomes Wonder City
+

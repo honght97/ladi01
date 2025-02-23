@@ -6,8 +6,11 @@ jQuery(document).ready(function ($) {
     if ($(".forte-inner").length) {
       $(".forte-inner").matchHeight({});
     }
-    if ($(".provider-card").length) {
-      $(".provider-card").matchHeight({});
+    if ($(".products-wrap .provider-card").length) {
+      $(".products-wrap .provider-card").matchHeight({});
+    }
+    if ($(".provider-it .provider-card").length) {
+      $(".provider-it .provider-card").matchHeight({});
     }
   }
 
