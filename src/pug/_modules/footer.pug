@@ -21,6 +21,9 @@ footer.footer
           iframe(src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwondercity.vinhomes.vn&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId', width='500', height='500', style='border:none;overflow:hidden', scrolling='no', frameborder='0', allowfullscreen='true', allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share')
 .form-fx
   .container
+    .hero-sp_inner
+      a.btn(href="#modal-fr" rel="modal:open")
+        span Tư vấn cho tôi
     .form-fx_wrap
       .form-fx_l
         p.footer-tt đăng ký nhận tư vấn
@@ -38,5 +41,28 @@ footer.footer
             .hero-sp_inner
               button.btn(type="submit")
                 span Tư vấn cho tôi
+
+#modal-fr.modal.js-momal
+  .modal-wrap
+    .modal-l
+      .modal-img
+        +img("home/form-bg.webp")
+    .modal-r
+      .modal-content
+        .promotion-fr
+          .tt-wrap
+            h2.tt đăng ký nhận tư vấn
+            p.desc
+              strong Để nhận được tư vấn & báo giá cùng các ưu đãi mới nhất về dự án Vinhomes Wonder City!
+          form(action="")
+            .form-inner
+              label.form-label
+                input.form-input(type="text", placeholder="Họ và Tên")
+              label.form-label
+                input.form-input(type="text", placeholder="Số điện thoại")
+              .hero-sp_inner
+                button.btn(type="submit")
+                  span Tư vấn cho tôi
+
 
 

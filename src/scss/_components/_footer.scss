@@ -85,8 +85,17 @@
     rgba(227, 211, 187, 1) 75%,
     rgba(198, 137, 70, 1) 100%
   );
-  @include max(991.98px) {
+  .hero-sp_inner {
     display: none;
+    @include max(991.98px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @include max(991.98px) {
+    background: transparent;
   }
 }
 .form-fx_wrap {
@@ -94,6 +103,9 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 2.4rem;
+  @include max(991.98px) {
+    display: none;
+  }
 }
 .form-fx_l {
   width: 30%;

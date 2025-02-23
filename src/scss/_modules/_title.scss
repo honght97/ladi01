@@ -64,3 +64,76 @@
     // display: none;
   }
 }
+// Modal
+.blocker {
+  padding: 1.5rem;
+  z-index: 100 !important;
+  background: rgba(71, 71, 71, 0.2);
+}
+
+.modal {
+  @include bgImage(right center);
+  background-image: url("../images/home/header-bg.webp");
+  max-width: 120rem;
+  padding: 0;
+  width: 100%;
+  // height: 75%;
+  min-height: 30rem;
+  // height: calc(100vw * (600 / 1728));
+
+  @include max(1024px) {
+    width: 100%;
+    height: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+.modal-img {
+  display: flex;
+  position: relative;
+  // padding-top: 100%;
+  // aspect-ratio: 1;
+  height: 100%;
+  & > img {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.modal-content {
+  // position: absolute;
+}
+.modal-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.modal-l,
+.modal-r {
+  width: 50%;
+  @include max(767.98px) {
+    width: 100%;
+  }
+}
+.modal-r {
+  .promotion-fr {
+    .tt-wrap {
+      .tt {
+        color: $color-text;
+      }
+    }
+    .form-input {
+      color: $color-pri;
+      &:focus {
+        border-color: $color-pri;
+      }
+    }
+  }
+}

@@ -6,10 +6,10 @@ const sourcemaps = require("gulp-sourcemaps");
 const path = require("path");
 const browserSync = require("browser-sync").create();
 const plumber = require("gulp-plumber");
-const tinypng = require('gulp-tinypng-compress');
-const gulpIf = require('gulp-if');
+const tinypng = require("gulp-tinypng-compress");
+const gulpIf = require("gulp-if");
 const pathImg = "./dist/assets/images/";
-const fs = require('fs');
+const fs = require("fs");
 function copyAsset() {
   return gulp.src(["src/assets/**/*"]).pipe(gulp.dest("./dist/assets"));
 }
@@ -29,24 +29,28 @@ function style() {
     .pipe(browserSync.stream());
 }
 //Tiny PNG
-var API_KEY = [
-  'VLMNbRLp20d1zb8sMthZWtddyNJRWBLs'
-];
+var API_KEY = ["VLMNbRLp20d1zb8sMthZWtddyNJRWBLs"];
 
 function optimizeImages() {
   const sizeLimit = 1024 * 1024;
 
-  return gulp.src('src/assets/images/**/*.{png,jpg,jpeg}')
+  return gulp
+    .src("src/assets/images/**/*.{png,jpg,jpeg}")
     .pipe(plumber())
-    .pipe(gulpIf(file => {
-      const stats = fs.statSync(file.path);
-      return stats.size > sizeLimit;
-    }, tinypng({
-      key: API_KEY,
-      sigFile: 'images/.tinypng-sigs',
-      log: true
-    })))
-    .pipe(gulp.dest('dist/assets/images'));
+    .pipe(
+      gulpIf(
+        (file) => {
+          const stats = fs.statSync(file.path);
+          return stats.size > sizeLimit;
+        },
+        tinypng({
+          key: API_KEY,
+          sigFile: "images/.tinypng-sigs",
+          log: true,
+        })
+      )
+    )
+    .pipe(gulp.dest("dist/assets/images"));
 }
 
 //compile jade into html
@@ -81,13 +85,20 @@ function watch() {
 }
 
 // define complex tasks
-const build = gulp.series(cleanSource, style, html, copyAsset, optimizeImages, watch);
+const build = gulp.series(
+  cleanSource,
+  style,
+  html,
+  copyAsset,
+  // optimizeImages,
+  watch
+);
 
 // export tasks
 exports.cleanSource = cleanSource;
 exports.style = style;
 exports.html = html;
 exports.build = build;
-exports.optimage = optimizeImages;
+// exports.optimage = optimizeImages;
 exports.watch = watch;
 exports.default = build;
